@@ -13,3 +13,5 @@ Any dataset can be used. Each class must be in its own folder. This is the same 
 
 
 You can find the project requirements in requirements.txt
+
+This project required python3.6
