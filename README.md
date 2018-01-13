@@ -13,7 +13,7 @@ Any dataset can be used. Each class must be in its own folder. This is the same 
 
 
 
-## Installing the right version of Pytorch 
+## Installing the right version of PyTorch 
 You can go over to http://pytorch.org and download version **0.3.0.post4** for your setup.
 For Cuda 8 on linux it can be installed using : pip install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp36-cp36m-linux_x86_64.whl 
 
