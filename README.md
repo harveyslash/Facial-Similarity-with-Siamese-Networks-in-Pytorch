@@ -12,6 +12,13 @@ Any dataset can be used. Each class must be in its own folder. This is the same 
 3. Run `find -name "*pgm" | xargs -I {} convert {} {}.png`
 
 
-You can find the project requirements in requirements.txt
+
+## Installing the right version of Pytorch 
+You can go over to http://pytorch.org and download version **0.3.0.post4** for your setup.
+For Cuda 8 on linux it can be installed using : pip install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp36-cp36m-linux_x86_64.whl 
+
+
+You can find other project requirements in `requirements.txt` , which you can install using `pip install -r requirements.txt`
 
 #### This project requires python3.6
+
