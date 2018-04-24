@@ -9,10 +9,10 @@
 #jedi==0.10.2
 #Jinja2==2.9.6
 #jsonschema==2.6.0
-#jupyter==1.0.0
-#jupyter-client==5.1.0
-#jupyter-console==5.1.0
-#jupyter-core==4.3.0
+jupyter==1.0.0
+jupyter-client==5.2.3
+jupyter-console==5.2.0
+jupyter-core==4.4.0
 #MarkupSafe==1.0
 #mistune==0.7.4
 #nbconvert==5.2.1
@@ -34,7 +34,7 @@
 #simplegeneric==0.8.1
 #six==1.10.0
 #terminado==0.6
-#testpath==0.3.1
+#testpath==0.3.1                                                            
 #torch==0.1.12.post2
 #torchvision==0.1.8
 #tornado==4.5.1
