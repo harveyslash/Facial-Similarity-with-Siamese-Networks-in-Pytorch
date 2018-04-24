@@ -1,5 +1,4 @@
-    ## -- using 0.2 for a while, not local
-    # Requires a pre-built local image called pytorch, build from the pytorch repo.
+# Requires a pre-built local image called pytorch, build from the pytorch repo.
 #
 # Build the docker image with:
 #
@@ -26,7 +25,8 @@
     #
     # On the host, browse to <returned_IP>:8097
 
-FROM pytorch/pytorch
+# Assuming this is a local build of master, at the moment
+FROM pytorch
 
 COPY ./requirements.txt requirements.txt
 RUN pip install --upgrade pip
