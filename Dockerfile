@@ -34,3 +34,6 @@ RUN pip install -r requirements.txt
 COPY . /workspace 
 WORKDIR /workspace
 EXPOSE 8889/tcp
+
+CMD ["./go.sh"]
+
