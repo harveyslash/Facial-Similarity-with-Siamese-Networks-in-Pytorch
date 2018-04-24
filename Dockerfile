@@ -1,4 +1,5 @@
-# Requires a pre-built local image called pytorch, build from the pytorch repo.
+    ## -- using 0.2 for a while, not local
+    # Requires a pre-built local image called pytorch, build from the pytorch repo.
 #
 # Build the docker image with:
 #
@@ -8,7 +9,7 @@
 #
 #  $ nvidia-docker run --rm -it --ipc=host siamfacial:latest
 #
-    # Aspirational.....
+    ## Aspirational.....
     # At the container prompt, start the visdom server, and the capsnet processing:
     #
     #  # python -m visdom.server & python capsule_network.py
