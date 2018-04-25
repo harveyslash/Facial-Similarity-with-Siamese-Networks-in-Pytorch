@@ -24,6 +24,16 @@ You can find other project requirements in `requirements.txt` , which you can in
 
 # Topiaruss notes
 
+First we need to get a local pytorch image
+
+```bash
+git clone https://github.com/pytorch/pytorch.git
+cd pytorch
+docker build -t pytorch -f docker/pytorch/Dockerfile .cd ..
+```
+
+Then clone and build the siamfacial repo
+
 ```bash
 git clone https://github.com/topiaruss/Facial-Similarity-with-Siamese-Networks-in-Pytorch.git siamfacial
 cd siamfacial
