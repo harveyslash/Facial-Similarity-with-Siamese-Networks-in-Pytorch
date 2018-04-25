@@ -24,13 +24,12 @@ You can find other project requirements in `requirements.txt` , which you can in
 
 # Topiaruss notes
 
-
-`
+```bash
 git clone https://github.com/topiaruss/Facial-Similarity-with-Siamese-Networks-in-Pytorch.git siamfacial
 cd siamfacial
 docker build -t siamfacial .
 docker run --rm -it -p 8889:8889 siamfacial:latest
-`
+```
 
 May need to replace the URL host IP in the output with localhost.
 
