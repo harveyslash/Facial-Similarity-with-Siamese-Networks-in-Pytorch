@@ -26,7 +26,7 @@
     # On the host, browse to <returned_IP>:8097
 
 # Assuming this is a local build of master, at the moment
-FROM pytorch
+FROM topiaruss/pytorch:master
 
 COPY ./requirements.txt requirements.txt
 RUN pip install --upgrade pip

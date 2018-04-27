@@ -33,7 +33,7 @@ docker build -t pytorch -f docker/pytorch/Dockerfile .cd ..
 ```
 
 Then clone the repo and build the siamfacial image
-
+docmer
 ```bash
 git clone https://github.com/topiaruss/Facial-Similarity-with-Siamese-Networks-in-Pytorch.git siamfacial
 cd siamfacial
