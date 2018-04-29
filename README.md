@@ -6,39 +6,26 @@ This project uses pytorch.
 
 Any dataset can be used. Each class must be in its own folder. This is the same structure that PyTorch's own image folder dataset uses.
 
-### Converting pgm files (if you decide to use the AT&T dataset) to png
-1. Install imagemagick 
-2. Go to root directory of the images
-3. Run `find -name "*pgm" | xargs -I {} convert {} {}.png`
-
-
-
-## Installing the right version of PyTorch 
-You can go over to http://pytorch.org and download version **0.3.0.post4** for your setup.
-For Cuda 8 on linux it can be installed using : pip install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp36-cp36m-linux_x86_64.whl 
-
-
-You can find other project requirements in `requirements.txt` , which you can install using `pip install -r requirements.txt`
-
-#### This project requires python3.6
-
-# Topiaruss notes
-
-First clone the repo and build a local pytorch image
-
+### Get to the usual context for our development
 ```bash
-git clone https://github.com/pytorch/pytorch.git
-cd pytorch
-docker build -t pytorch -f docker/pytorch/Dockerfile .cd ..
+cd ~/dev/clearfree
 ```
 
-Then clone the repo and build the siamfacial image
-docmer
+### First clone Russ's up-to-date pytorch repo and build a local image
+```bash
+git clone https://github.com/pytorch/pytorch.git pytorchfork
+cd pytorchfork
+git checkout -b working origin/working
+docker build -t topiaruss/pytorch:master -f docker/pytorch/Dockerfile .
+cd ..
+```
+
+### Then clone the repo, build, and run the siamfacial image
 ```bash
 git clone https://github.com/topiaruss/Facial-Similarity-with-Siamese-Networks-in-Pytorch.git siamfacial
 cd siamfacial
 docker build -t siamfacial .
-nvidia-docker run --rm -it -p 8889:8889 siamfacial:latest
+nvidia-docker run --rm -i -p 8889:8889 siamfacial:latest
 ```
 
 May need to replace the URL host IP in the output with localhost.
