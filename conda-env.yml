@@ -1,0 +1,7 @@
+name: pytorch-env
+
+dependencies:
+  - python=3.6
+  - matplotlib=2.2.2 
+  - jupyter=1.0
+  - torchvision
