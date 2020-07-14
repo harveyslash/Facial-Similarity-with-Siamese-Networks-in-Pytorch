@@ -1,0 +1,3 @@
+[submodule "ms-celeb-extractor"]
+	path = ms-celeb-extractor
+	url = https://github.com/harveyslash/ms-celeb-extractor
